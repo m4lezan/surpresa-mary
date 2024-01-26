@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surpresa para Você!</title>
+  <style>
+    /* Estilos CSS dentro da tag <style> */
+  </style>
+</head>
+<body>
+  <!-- Corpo do HTML -->
+  <h1 style="font-size: 27px; color: #ffffff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;">Surpresa para Maryzinha, minha princesa!</h1>
+  <div id="surpresa" style="font-family: cursive, Times, serif;"></div>
+  <button id="botaoSurpresa" onclick="mostrarSurpresa()">Clique Aqui!</button>
+
+  <!-- JavaScript dentro da tag <script> -->
+  <script>
+    function mostrarSurpresa() {
+      var mensagens = [
+        "Oi amor, " +
+        "só queria dizer o quanto você é incrível. Você faz meu coração dar cambalhotas e meu sorriso aparecer do nada. É como se você trouxesse todo esse brilho para os meus dias " +
+        "Cada momento com você é como um daqueles filmes românticos, mas melhor, porque é real. Não tem preço. É tipo um combo de comédia romântica e ação, só que na vida real. " +
+        "Você é o meu raio de sol em dias nublados, a minha playlist preferida e a melhor parte do meu dia. Só queria que soubesse o quanto te amo " +
+        "Espero que tenha gostado da surpresa, assinado, Malezan"
+      ];
+      var indiceMensagem = Math.floor(Math.random() * mensagens.length);
+      var mensagem = mensagens[indiceMensagem];
+      document.getElementById("surpresa").innerHTML = mensagem;
+    }
+  </script>
+</body>
+</html>
